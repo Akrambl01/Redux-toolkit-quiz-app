@@ -1,139 +1,192 @@
 {
   "questions": [
     {
-      "question": "Which is the most popular JavaScript framework?",
-      "options": ["Angular", "React", "Svelte", "Vue"],
-      "correctOption": 1,
-      "points": 10
-    },
-    {
-      "question": "Which company invented React?",
-      "options": ["Google", "Apple", "Netflix", "Facebook"],
-      "correctOption": 3,
-      "points": 10
-    },
-    {
-      "question": "What's the fundamental building block of React apps?",
-      "options": ["Components", "Blocks", "Elements", "Effects"],
-      "correctOption": 0,
-      "points": 10
-    },
-    {
-      "question": "What's the name of the syntax we use to describe the UI in React components?",
-      "options": ["FBJ", "Babel", "JSX", "ES2015"],
-      "correctOption": 2,
-      "points": 10
-    },
-    {
-      "question": "How does data flow naturally in React apps?",
+      "question": "Quel est l'objectif principal de Redux Toolkit ?",
       "options": [
-        "From parents to children",
-        "From children to parents",
-        "Both ways",
-        "The developers decides"
+        "Simplifier la logique Redux et réduire le code répétitif",
+        "Remplacer Redux classique entièrement",
+        "Ajouter plus de complexité à la gestion de l'état"
       ],
       "correctOption": 0,
       "points": 10
     },
     {
-      "question": "How to pass data into a child component?",
-      "options": ["State", "Props", "PropTypes", "Parameters"],
-      "correctOption": 1,
+      "question": "Quelle fonction est utilisée pour créer un slice Redux dans Redux Toolkit ?",
+      "options": ["createSlice", "createReducer", "createAction"],
+      "correctOption": 0,
       "points": 10
     },
     {
-      "question": "When to use derived state?",
+      "question": "Que fait la fonction `configureStore` dans Redux Toolkit ?",
       "options": [
-        "Whenever the state should not trigger a re-render",
-        "Whenever the state can be synchronized with an effect",
-        "Whenever the state should be accessible to all components",
-        "Whenever the state can be computed from another state variable"
+        "Configure le store Redux avec des paramètres par défaut optimisés",
+        "Crée un seul réducteur pour toute l'application",
+        "Remplace la nécessité d'utiliser des réducteurs"
       ],
-      "correctOption": 3,
-      "points": 30
-    },
-    {
-      "question": "What triggers a UI re-render in React?",
-      "options": [
-        "Running an effect",
-        "Passing props",
-        "Updating state",
-        "Adding event listeners to DOM elements"
-      ],
-      "correctOption": 2,
-      "points": 20
-    },
-    {
-      "question": "When do we directly \"touch\" the DOM in React?",
-      "options": [
-        "When we need to listen to an event",
-        "When we need to change the UI",
-        "When we need to add styles",
-        "Almost never"
-      ],
-      "correctOption": 3,
-      "points": 20
-    },
-    {
-      "question": "In what situation do we use a callback to update state?",
-      "options": [
-        "When updating the state will be slow",
-        "When the updated state is very data-intensive",
-        "When the state update should happen faster",
-        "When the new state depends on the previous state"
-      ],
-      "correctOption": 3,
-      "points": 30
-    },
-    {
-      "question": "If we pass a function to useState, when will that function be called?",
-      "options": [
-        "On each re-render",
-        "Each time we update the state",
-        "Only on the initial render",
-        "The first time we update the state"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "Which hook to use for an API request on the component's initial render?",
-      "options": ["useState", "useEffect", "useRef", "useReducer"],
-      "correctOption": 1,
+      "correctOption": 0,
       "points": 10
     },
     {
-      "question": "Which variables should go into the useEffect dependency array?",
+      "question": "Laquelle des affirmations suivantes est vraie concernant `createSlice` ?",
       "options": [
-        "Usually none",
-        "All our state variables",
-        "All state and props referenced in the effect",
-        "All variables needed for clean up"
+        "Il génère automatiquement des créateurs d'actions",
+        "Il nécessite la création manuelle des réducteurs",
+        "Il ne peut pas gérer de logique asynchrone"
       ],
-      "correctOption": 2,
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Comment Redux Toolkit active-t-il Redux DevTools ?",
+      "options": [
+        "En activant l'option devTools dans createSlice",
+        "En important Redux DevTools manuellement",
+        "C'est activé par défaut via configureStore"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "Quel utilitaire de Redux Toolkit est utilisé pour gérer la logique asynchrone ?",
+      "options": ["createAsyncThunk", "createSlice", "createReducer"],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Que retourne la fonction createAsyncThunk ?",
+      "options": [
+        "Un reducer pour gérer les actions asynchrones",
+        "Un action creator qui gère les états pending, fulfilled et rejected",
+        "Un middleware pour les requêtes API"
+      ],
+      "correctOption": 1,
       "points": 30
     },
     {
-      "question": "An effect will always run on the initial render.",
+      "question": "Lequel des éléments suivants est un avantage de Redux Toolkit ?",
       "options": [
-        "True",
-        "It depends on the dependency array",
-        "False",
-        "In depends on the code in the effect"
+        "Il réduit le code répétitif",
+        "Il élimine le besoin de réducteurs",
+        "Il remplace entièrement l'état de React"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Quel est l'objectif de la bibliothèque `immer` dans Redux Toolkit ?",
+      "options": [
+        "Simplifier les mises à jour immuables",
+        "Gérer les actions asynchrones",
+        "Remplacer Redux entièrement"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Quelle méthode est utilisée pour créer un magasin Redux avec Redux Toolkit ?",
+      "options": ["createSlice", "configureStore", "createStore"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "Comment Redux Toolkit aide-t-il à gérer les erreurs dans les requêtes asynchrones ?",
+      "options": [
+        "En écrivant des reducers séparés",
+        "En utilisant l'état rejected dans createAsyncThunk",
+        "En intégrant automatiquement un gestionnaire d'erreurs"
+      ],
+      "correctOption": 1,
+      "points": 30
+    },
+    {
+      "question": "Laquelle des fonctionnalités suivantes n'est PAS incluse dans Redux Toolkit ?",
+      "options": [
+        "Gestion automatique des requêtes API",
+        "Génération automatique de types d'actions",
+        "Prise en charge intégrée d'Immer"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Quel est l'objectif de la fonction `prepare` dans `createSlice` ?",
+      "options": [
+        "Personnaliser le payload d'une action",
+        "Gérer la logique asynchrone",
+        "Remplacer le réducteur"
       ],
       "correctOption": 0,
       "points": 30
     },
     {
-      "question": "When will an effect run if it doesn't have a dependency array?",
+      "question": "Comment combiner plusieurs reducers dans Redux Toolkit ?",
       "options": [
-        "Only when the component mounts",
-        "Only when the component unmounts",
-        "The first time the component re-renders",
-        "Each time the component is re-rendered"
+        "En utilisant extraReducers uniquement",
+        "En passant un objet de reducers à configureStore",
+        "En utilisant combineReducers"
       ],
-      "correctOption": 3,
+      "correctOption": 1,
       "points": 20
+    },
+    {
+      "question": "Quel est l'objectif du champ `initialState` dans `createSlice` ?",
+      "options": [
+        "Définir l'état initial du slice",
+        "Générer des types d'actions",
+        "Gérer la logique asynchrone"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Pourquoi utiliser configureStore au lieu de createStore ?",
+      "options": [
+        "Pour éviter d'utiliser des actions",
+        "Pour écrire moins de reducers",
+        "Pour activer DevTools et inclure des middlewares par défaut"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Quel est l'objectif du champ `reducers` dans `createSlice` ?",
+      "options": [
+        "Définir les réducteurs pour les actions",
+        "Définir l'état initial",
+        "Gérer la logique asynchrone"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Comment surveiller l'état global dans un composant React avec Redux Toolkit ?",
+      "options": [
+        "En utilisant useState",
+        "En utilisant le hook useSelector",
+        "En utilisant connect"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "Quel est l'objectif du callback `builder` dans `extraReducers` ?",
+      "options": [
+        "Gérer des actions en dehors du slice",
+        "Définir des propriétés d'état supplémentaires",
+        "Remplacer le réducteur principal"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "Comment Redux Toolkit simplifie-t-il la création des actions ?",
+      "options": [
+        "En activant des actions globales",
+        "En générant automatiquement des types d'actions avec createSlice",
+        "En supprimant les reducers"
+      ],
+      "correctOption": 1,
+      "points": 30
     }
   ]
 }
