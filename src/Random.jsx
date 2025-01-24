@@ -6,7 +6,7 @@ function Random() {
   const canGenerate = useSelector((state) => state.canGenerate);
   const dispatch = useDispatch();
 
-  const ourNum = [16, 14, 22, 21, 6];
+  const ourNum = [11, 14, 18, 22, 24];
   const maxClicks = 20;
   const [answered, setAnswered] = useState(ourNum);
   const [number, setNumber] = useState(null);
