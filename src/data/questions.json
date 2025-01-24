@@ -43,7 +43,7 @@
         "En important Redux DevTools manuellement",
         "C'est activé par défaut via configureStore"
       ],
-      "correctOption": 3,
+      "correctOption": 2,
       "points": 20
     },
     {

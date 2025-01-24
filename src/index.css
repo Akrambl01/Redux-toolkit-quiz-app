@@ -47,7 +47,7 @@ p {
 }
 
 .app-header {
-  width: 66rem;
+  width: 55rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ img {
 }
 
 h1 {
-  font-family: "Codystar", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 5.6rem;
   font-weight: 500;
   font-style: normal;

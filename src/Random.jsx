@@ -33,7 +33,7 @@ function Random() {
     >
       {clicks < maxClicks
         ? `Random ${number !== null ? number : ""}`
-        : "No more clicks allowed"}
+        : "No more questions"}
     </button>
   );
 }
