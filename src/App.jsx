@@ -9,7 +9,7 @@ import Error from "./Error";
 import Question from "./Question";
 import { useEffect } from "react";
 import Progress from "./Progress";
-import FinishedScreen from "./FinshedScreen";
+import FinishedScreen from "./FinishedScreen";
 import NextButton from "./NextButton";
 import Footer from "./Footer";
 import Random from "./Random";
