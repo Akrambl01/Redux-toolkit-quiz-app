@@ -1,4 +1,4 @@
-# React Redux Quiz App
+# React Redux RTk Quiz App
 
 ## Overview
 This project is a Quiz Application built using React and Redux. It demonstrates the use of Redux for state management in a React application.
