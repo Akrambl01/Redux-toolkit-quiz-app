@@ -6,7 +6,7 @@ function StartScreen() {
   const questions = useSelector((state) => state.questions);
   return (
     <div>
-      <h2>Welcome To The React Quiz!</h2>
+      <h2>Welcome To The React RTK Quiz!</h2>
       <p> {questions.length} questions to test your React mastery</p>
       <button className="btn btn-ui" onClick={() => dispatch(quizActive())}>
         Let&apos;s start
